@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">NoteEx</string>
+    <string name="notes_ex">NoteEx</string>
+    <string name="search_notes">Search Notes</string>
 </resources>
