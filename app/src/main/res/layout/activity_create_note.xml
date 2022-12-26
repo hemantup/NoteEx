@@ -65,7 +65,7 @@
                 app:layout_constraintTop_toBottomOf="@id/imageViewBack"/>
 
             <EditText
-                android:id="@+id/inputNote"
+                android:id="@+id/inputNoteText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_12sdp"
@@ -88,9 +88,23 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"/>
 
+            <TextView
+                android:id="@+id/textDateTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_regular"
+                android:includeFontPadding="false"
+                android:textColor="@color/colorIcon"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintTop_toBottomOf="@id/inputNoteTitle"
+                app:layout_constraintEnd_toEndOf="@id/inputNoteTitle"
+                app:layout_constraintStart_toStartOf="@id/inputNoteTitle"/>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+
     </ScrollView>
+
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
