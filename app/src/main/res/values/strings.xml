@@ -2,4 +2,5 @@
     <string name="app_name">NoteEx</string>
     <string name="notes_ex">NoteEx</string>
     <string name="search_notes">Search Notes</string>
+    <string name="type_note_here">Type note here...</string>
 </resources>
