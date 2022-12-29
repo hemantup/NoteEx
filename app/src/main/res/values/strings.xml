@@ -3,4 +3,6 @@
     <string name="notes_ex">NoteEx</string>
     <string name="search_notes">Search Notes</string>
     <string name="type_note_here">Type note here...</string>
+    <string name="supporting_text">supporting_text In publishing and graphic design,</string>
+    <string name="dateTime">Date Time</string>
 </resources>

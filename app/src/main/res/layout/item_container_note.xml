@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardViewRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background_note"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Title, date and description text -->
+                <TextView
+                    android:id="@+id/textTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:includeFontPadding="false"
+                    android:text="@string/notes_ex"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:textSize="@dimen/_15ssp"
+                    />
+                <TextView
+                    android:id="@+id/textDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:includeFontPadding="false"
+                    android:text="@string/dateTime"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="@dimen/_10ssp"
+                    android:textColor="@color/colorWhite"
+                    />
+                <TextView
+                    android:id="@+id/textDescriptionNoteText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="@string/supporting_text"
+                    android:textSize="@dimen/_12ssp"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:textColor="@color/colorWhite"
+                    android:maxLines="15"
+                    />
+            </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
