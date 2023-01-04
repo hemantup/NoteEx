@@ -8,11 +8,11 @@ import androidx.room.PrimaryKey;
 
 import java.io.Serializable;
 
-@Entity(tableName = "notes")
+@Entity(tableName = "notesTable")
 public class Note implements Serializable {
 
     @PrimaryKey(autoGenerate = true)
-    private int id;
+    int id;
 
     @ColumnInfo(name = "title")
     private String title;

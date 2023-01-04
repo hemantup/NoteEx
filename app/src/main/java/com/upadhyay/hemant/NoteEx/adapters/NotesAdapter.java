@@ -1,8 +1,13 @@
 package com.upadhyay.hemant.NoteEx.adapters;
 
+import android.content.res.ColorStateList;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -46,12 +51,14 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NoteViewHold
      public class NoteViewHolder extends RecyclerView.ViewHolder{
 
           TextView textTitle,textDateTime,textDescriptionNoteText;
+          LinearLayout linearLayout;
 
           public NoteViewHolder(@NonNull View itemView) {
                super(itemView);
                textTitle = itemView.findViewById(R.id.textTitle);
                textDateTime = itemView.findViewById(R.id.textDateTime);
                textDescriptionNoteText = itemView.findViewById(R.id.textDescriptionNoteText);
+               linearLayout = itemView.findViewById(R.id.linearLayoutNote);
 
           }
 
@@ -71,6 +78,26 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NoteViewHold
 
                textDateTime.setText(note.getDateTime());
 
+               Log.d("TAG", "Adapter.getNoteColor: " + note.getColor());
+
+               if(note.getColor() != null){
+                    switch (note.getColor()){
+                         case "colorDefaultNoteColor":
+                              linearLayout.getBackground().setColorFilter(Color.parseColor("#333333"), PorterDuff.Mode.SRC_ATOP);
+                              break;
+                         case "colorNoteColor2":
+                              linearLayout.getBackground().setColorFilter(Color.parseColor("#FDBE3B"), PorterDuff.Mode.SRC_ATOP);
+                              break;
+                         case "colorNoteColor3":
+                              linearLayout.getBackground().setColorFilter(Color.parseColor("#FF4842"), PorterDuff.Mode.SRC_ATOP);
+                              break;
+                         case "colorNoteColor4":
+                              linearLayout.getBackground().setColorFilter(Color.parseColor("#3A52FC"), PorterDuff.Mode.SRC_ATOP);                              break;
+                         case "colorNoteColor5":
+                              linearLayout.getBackground().setColorFilter(Color.parseColor("#000000"), PorterDuff.Mode.SRC_ATOP);
+                              break;
+                    }
+               }
           }
      }
 }

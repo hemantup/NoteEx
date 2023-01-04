@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -60,25 +61,31 @@ public class MainActivity extends AppCompatActivity {
         // Async task to get all the saved notes
         class GetNotesTask extends AsyncTask<Void, Void, List<Note>>{
             @Override
-            protected void onPostExecute(List<Note> notes) {
-                    super.onPostExecute(notes);
-                    if(notes.size() == 0){
-                        noteList.addAll(notes);
-                        notesAdapter.notifyDataSetChanged();
-                    }else{
-                        noteList.add(0, notes.get(0));
-                        notesAdapter.notifyItemInserted(0);
-                    }
-                    notesRecyclerView.smoothScrollToPosition(0);
-            }
-
-            @Override
             protected List<Note> doInBackground(Void... voids) {
 
                 return NotesDatabase
                         .getNotesDatabase(getApplicationContext())
                         .noteDao().getAllNotes();
             }
+
+            @Override
+            protected void onPostExecute(List<Note> notes) {
+                super.onPostExecute(notes);
+
+                Log.d("TAG", "note: " + notes.toString());
+                Log.d("TAG", "noteList: " + noteList.toString());
+
+                if(noteList.size() == 0){
+                    noteList.addAll(notes);
+                    notesAdapter.notifyDataSetChanged();
+                }else{
+                    noteList.add(0, notes.get(0));
+                    notesAdapter.notifyItemInserted(0);
+                }
+                notesRecyclerView.smoothScrollToPosition(0);
+            }
+
+
         }
 
         new GetNotesTask().execute();
