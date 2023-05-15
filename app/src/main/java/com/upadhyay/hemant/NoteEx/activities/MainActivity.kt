@@ -4,13 +4,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.upadhyay.hemant.NoteEx.adapters.NotesAdapter
 import android.os.Bundle
-import com.upadhyay.hemant.NoteEx.R
 import android.content.Intent
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import android.os.AsyncTask
 import com.upadhyay.hemant.NoteEx.data.database.NotesDatabase
 import android.util.Log
 import android.widget.ImageView
+import com.akshatbhuhagal.mynotes.R
 import com.upadhyay.hemant.NoteEx.data.entities.NoteEntity
 import java.util.ArrayList
 

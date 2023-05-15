@@ -2,7 +2,7 @@ package com.upadhyay.hemant.NoteEx.data.dao
 
 import androidx.room.*
 import com.upadhyay.hemant.NoteEx.data.entities.NoteEntity
-import java.util.concurrent.Flow
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface NoteDao {
@@ -25,3 +25,4 @@ interface NoteDao {
     @Update
     suspend fun updateNotes(note: NoteEntity)
 }
+
