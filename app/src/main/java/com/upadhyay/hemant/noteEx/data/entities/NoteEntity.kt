@@ -1,4 +1,4 @@
-package com.upadhyay.hemant.NoteEx.data.entities
+package com.upadhyay.hemant.noteEx.data.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

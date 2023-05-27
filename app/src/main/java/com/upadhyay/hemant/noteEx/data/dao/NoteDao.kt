@@ -1,7 +1,7 @@
-package com.upadhyay.hemant.NoteEx.data.dao
+package com.upadhyay.hemant.noteEx.data.dao
 
 import androidx.room.*
-import com.upadhyay.hemant.NoteEx.data.entities.NoteEntity
+import com.upadhyay.hemant.noteEx.data.entities.NoteEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao

@@ -1,11 +1,11 @@
-package com.upadhyay.hemant.NoteEx.activities
+package com.upadhyay.hemant.noteEx.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.akshatbhuhagal.mynotes.R
+import com.upadhyay.hemant.R
 
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

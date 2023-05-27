@@ -1,0 +1,306 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.upadhyay.hemant.noteEx.activities.createNotes.BottomSheetFragment">
+
+    <LinearLayout
+        android:id="@+id/layoutHearder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="7sp">
+
+                    <FrameLayout
+                        android:id="@+id/fNoteBlue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3sp">
+
+                        <View
+                            android:layout_width="33sp"
+                            android:layout_height="33sp"
+                            android:background="@color/colorNoteColor2" />
+
+                        <ImageView
+                            android:id="@+id/imgNoteBlue"
+                            android:layout_width="20sp"
+                            android:layout_height="20sp"
+                            android:layout_gravity="center"
+                            app:tint="@color/colorBlack" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fNoteCyan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3sp">
+
+                        <View
+                            android:layout_width="33sp"
+                            android:layout_height="33sp"
+                            android:background="@color/colorNoteColor3" />
+
+                        <ImageView
+                            android:id="@+id/imgNoteCyan"
+                            android:layout_width="20sp"
+                            android:layout_height="20sp"
+                            android:layout_gravity="center"
+                            app:tint="@color/colorBlack" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fNoteGreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3sp">
+
+                        <View
+                            android:layout_width="33sp"
+                            android:layout_height="33sp"
+                            android:background="@color/colorNoteColor4" />
+
+                        <ImageView
+                            android:id="@+id/imgNoteGreen"
+                            android:layout_width="17dp"
+                            android:layout_height="20sp"
+                            android:layout_gravity="center"
+                            app:tint="@color/colorBlack" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fNoteOrange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3sp">
+
+                        <View
+                            android:layout_width="33sp"
+                            android:layout_height="33sp"
+                            android:background="@color/colorNoteColor5" />
+
+                        <ImageView
+                            android:id="@+id/imgNoteOrange"
+                            android:layout_width="16dp"
+                            android:layout_height="20sp"
+                            android:layout_gravity="center"
+                            app:tint="@color/colorBlack" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fNotePurple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3sp">
+
+                        <View
+                            android:layout_width="33sp"
+                            android:layout_height="33sp"
+                            android:background="@color/colorNoteColor2" />
+
+                        <ImageView
+                            android:id="@+id/imgNotePurple"
+                            android:layout_width="20sp"
+                            android:layout_height="20sp"
+                            android:layout_gravity="center"
+                            app:tint="@color/colorBlack" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fNoteRed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3sp">
+
+                        <View
+                            android:layout_width="33sp"
+                            android:layout_height="33sp"
+                            android:background="@color/colorNoteColor3" />
+
+                        <ImageView
+                            android:id="@+id/imgNoteRed"
+                            android:layout_width="20sp"
+                            android:layout_height="20sp"
+                            android:layout_gravity="center"
+                            app:tint="@color/colorBlack" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fNoteYellow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3sp">
+
+                        <View
+                            android:layout_width="33sp"
+                            android:layout_height="33sp"
+                            android:background="@color/colorNoteColor2" />
+
+                        <ImageView
+                            android:id="@+id/imgNoteYellow"
+                            android:layout_width="20sp"
+                            android:layout_height="20sp"
+                            android:layout_gravity="center"
+                            app:tint="@color/colorBlack" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fNoteBrown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3sp">
+
+                        <View
+                            android:layout_width="33sp"
+                            android:layout_height="33sp"
+                            android:background="@color/colorNoteColor4" />
+
+                        <ImageView
+                            android:id="@+id/imgNoteBrown"
+                            android:layout_width="20sp"
+                            android:layout_height="20sp"
+                            android:layout_gravity="center"
+                            app:tint="@color/colorBlack" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fNoteIndigo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3sp">
+
+                        <View
+                            android:layout_width="33sp"
+                            android:layout_height="33sp"
+                            android:background="@color/colorNoteColor5" />
+
+                        <ImageView
+                            android:id="@+id/imgNoteIndigo"
+                            android:layout_width="20sp"
+                            android:layout_height="20sp"
+                            android:layout_gravity="center"
+                            app:tint="@color/colorBlack" />
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+
+            <LinearLayout
+                android:id="@+id/layoutDeleteNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:padding="10sp"
+                    android:src="@drawable/ic_done"
+                    app:tint="@color/colorBlack" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:text="Delete Note"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:padding="10sp"
+                    android:src="@drawable/ic_add"
+                    app:tint="@color/colorBlack" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:text="Add Image"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutWebUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:padding="10sp"
+                    android:src="@drawable/ic_insert_web_link"
+                    app:tint="@color/colorBlack" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:text="Add Web Link"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

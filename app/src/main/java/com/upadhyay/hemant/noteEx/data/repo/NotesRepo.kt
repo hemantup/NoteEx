@@ -1,7 +1,7 @@
-package com.upadhyay.hemant.NoteEx.data.repo
+package com.upadhyay.hemant.noteEx.data.repo
 
-import com.upadhyay.hemant.NoteEx.data.dao.NoteDao
-import com.upadhyay.hemant.NoteEx.data.entities.NoteEntity
+import com.upadhyay.hemant.noteEx.data.dao.NoteDao
+import com.upadhyay.hemant.noteEx.data.entities.NoteEntity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject

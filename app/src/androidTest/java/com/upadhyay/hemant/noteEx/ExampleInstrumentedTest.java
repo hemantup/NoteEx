@@ -1,4 +1,4 @@
-package com.upadhyay.hemant.NoteEx;
+package com.upadhyay.hemant.noteEx;
 
 import android.content.Context;
 

@@ -1,8 +1,8 @@
-package com.upadhyay.hemant.NoteEx.di
+package com.upadhyay.hemant.noteEx.di
 
 import android.content.Context
 import androidx.room.Room
-import com.upadhyay.hemant.NoteEx.data.database.NotesDatabase
+import com.upadhyay.hemant.noteEx.data.database.NotesDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

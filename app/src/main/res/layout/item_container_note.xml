@@ -1,59 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:id="@+id/linearLayoutNote"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:background="@drawable/background_note"
-    android:layout_marginStart="@dimen/_12sdp"
-    android:layout_marginTop="@dimen/_10sdp"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:orientation="vertical">
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:elevation="@dimen/_5sdp"
+        app:cardBackgroundColor="@color/lightGreyDark"
+        app:cardCornerRadius="15sp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:orientation="vertical">
 
-                <!-- Title, date and description text -->
-            <TextView
-                android:id="@+id/textTitle"
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imgNote"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_8sdp"
-                android:layout_marginEnd="@dimen/_8sdp"
-                android:layout_marginTop="@dimen/_8sdp"
-                android:includeFontPadding="false"
-                android:text="@string/notes_ex"
-                android:textColor="@color/colorWhite"
-                android:fontFamily="@font/ubuntu_bold"
-                android:textSize="@dimen/_15ssp"
-                    />
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                app:riv_corner_radius_bottom_left="@dimen/_20sdp"
+                app:riv_corner_radius_bottom_right="@dimen/_20sdp" />
+
             <TextView
-                android:id="@+id/textDateTime"
+                android:id="@+id/tvTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_8sdp"
-                android:layout_marginEnd="@dimen/_8sdp"
-                android:layout_marginTop="@dimen/_2sdp"
-                android:includeFontPadding="false"
-                android:text="@string/dateTime"
-                android:fontFamily="@font/ubuntu_regular"
-                android:textSize="@dimen/_10ssp"
-                android:textColor="@color/colorWhite" />
+                android:maxLength="40"
+                android:paddingTop="@dimen/_10sdp"
+                android:text="@string/my_notes"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                />
+
             <TextView
-                android:id="@+id/textDescriptionNoteText"
+                android:id="@+id/tvWebLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvDesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_8sdp"
-                android:layout_marginEnd="@dimen/_8sdp"
-                android:layout_marginTop="@dimen/_6sdp"
-                android:text="@string/supporting_text"
-                android:textSize="@dimen/_12ssp"
-                android:includeFontPadding="false"
-                android:fontFamily="@font/ubuntu_medium"
+                android:maxLength="80"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/my_notes"
                 android:textColor="@color/colorWhite"
-                android:maxLines="15" />
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="5sp"
+                android:paddingTop="5sp"
+                android:paddingRight="5sp"
+                android:paddingBottom="5sp"
+                android:text="@string/my_notes"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_9sdp" />
+
+
         </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>
