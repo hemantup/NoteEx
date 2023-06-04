@@ -8,8 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
-import com.upadhyay.hemant.databinding.ItemContainerNoteBinding
 import com.upadhyay.hemant.noteEx.data.entities.NoteEntity
+import com.upadhyay.hemant.noteEx.databinding.ItemContainerNoteBinding
 
 class NotesAdapter : ListAdapter<NoteEntity, NotesAdapter.NoteViewHolder>(diffCallback) {
 

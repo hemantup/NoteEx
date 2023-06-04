@@ -10,6 +10,7 @@ import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
+import android.util.Log
 import android.util.Patterns
 import androidx.fragment.app.Fragment
 import android.view.View
@@ -19,13 +20,13 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.google.android.material.snackbar.Snackbar
+import com.upadhyay.hemant.noteEx.R
 import com.upadhyay.hemant.noteEx.Util.EMPTY_STRING
 import com.upadhyay.hemant.noteEx.Util.makeGone
 import com.upadhyay.hemant.noteEx.Util.makeVisible
 import com.upadhyay.hemant.noteEx.Util.viewBinding
 import com.upadhyay.hemant.noteEx.data.entities.NoteEntity
-import com.upadhyay.hemant.R
-import com.upadhyay.hemant.databinding.FragmentCreateNoteBinding
+import com.upadhyay.hemant.noteEx.databinding.FragmentCreateNoteBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 import pub.devrel.easypermissions.AppSettingsDialog
@@ -54,6 +55,8 @@ class CreateNoteFragment :
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        Log.d("TAG","CreateNoteFragment: has been created")
 
         requireArguments().getInt(getString(R.string.noteID), -1).also {
             if(it != -1) viewModel.setNoteId(it)

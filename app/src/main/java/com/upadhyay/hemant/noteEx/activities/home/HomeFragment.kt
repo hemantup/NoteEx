@@ -1,21 +1,22 @@
 package com.upadhyay.hemant.noteEx.activities.home
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.SearchView
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.upadhyay.hemant.R
-import com.upadhyay.hemant.databinding.FragmentHomeBinding
+import com.upadhyay.hemant.noteEx.R
 import com.upadhyay.hemant.noteEx.Util.viewBinding
 import com.upadhyay.hemant.noteEx.activities.createNotes.CreateNoteFragment
+import com.upadhyay.hemant.noteEx.databinding.FragmentHomeBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 
 @AndroidEntryPoint
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private val binding by viewBinding(FragmentHomeBinding::bind)
 
@@ -35,6 +36,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        Log.d("TAG","HomeFragment: fragment has been created")
         setUpRv()
         collectNotes()
 
@@ -97,5 +99,6 @@ class HomeFragment : Fragment() {
         fragmentTransition.replace(R.id.frameLayoutFragment, fragment)
             .addToBackStack(fragment.javaClass.simpleName)
         fragmentTransition.commit()
+        Log.d("TAG","Homefragment: fragment has been commit")
     }
 }

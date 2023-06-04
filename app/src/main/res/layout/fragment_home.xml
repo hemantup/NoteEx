@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="com.upadhyay.hemant.noteEx.activities.home.HomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -36,7 +37,7 @@
                     android:gravity="center_horizontal"
                     android:text="@string/notes"
                     android:textAlignment="center"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorBlack"
                     android:textSize="30sp"
                     android:textStyle="bold" />
 
@@ -48,7 +49,7 @@
                     android:gravity="center_horizontal"
                     android:text="@string/tasks"
                     android:textAlignment="center"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorBlack"
                     android:textSize="30sp"
                     android:textStyle="bold" />
 
@@ -70,10 +71,11 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 

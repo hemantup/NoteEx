@@ -14,4 +14,19 @@
         <item name="android:navigationBarColor">@color/colorPrimary</item>
         <!-- Customize your theme here. -->
     </style>
+
+
+    <!-- Search View Text  -->
+    <style name="SearchAutoCompleteTextView" parent="Widget.AppCompat.Light.AutoCompleteTextView">
+        <item name="android:editTextColor">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/colorWhite</item>
+    </style>
+
+    <style name="SearchTheme" parent="Theme.AppCompat.Light">
+        <item name="queryHint">@string/search_notes</item>
+        <item name="autoCompleteTextViewStyle">@style/SearchAutoCompleteTextView</item>
+    </style>
+
+
 </resources>

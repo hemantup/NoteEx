@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorWhite"
     android:paddingEnd="@dimen/_12sdp"
     android:paddingStart="@dimen/_12sdp"
     tools:context="com.upadhyay.hemant.noteEx.activities.MainActivity">
@@ -12,7 +12,7 @@
     <FrameLayout
         android:id="@+id/frameLayoutFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

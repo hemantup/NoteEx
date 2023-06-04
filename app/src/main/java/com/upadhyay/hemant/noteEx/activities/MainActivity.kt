@@ -2,10 +2,11 @@ package com.upadhyay.hemant.noteEx.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
+import com.upadhyay.hemant.noteEx.R
 import com.upadhyay.hemant.noteEx.activities.home.HomeFragment
-import com.upadhyay.hemant.R
-import com.upadhyay.hemant.databinding.ActivityMainBinding
+import com.upadhyay.hemant.noteEx.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 
@@ -21,7 +22,8 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        replaceFragment(HomeFragment.newInstance(), true)
+        Log.d("MainActivity","Replace to Home Fragment" + HomeFragment.newInstance().toString())
+        replaceFragment(HomeFragment.newInstance(), false)
 
     }
 
@@ -35,13 +37,15 @@ class MainActivity : AppCompatActivity() {
                 android.R.anim.slide_in_left
             )
         }
-        fragmentTransition.replace(R.id.frameLayoutFragment, fragment).addToBackStack(fragment.javaClass.simpleName)
+        fragmentTransition.replace(R.id.frameLayoutFragment, fragment).addToBackStack(null)
         fragmentTransition.commit()
+        Log.d("TAG","fragment commited")
     }
 
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         onBackPressedDispatcher.onBackPressed()
+        Log.d("TAG","Mainactivity backbutton pressed")
         finish()
     }
 

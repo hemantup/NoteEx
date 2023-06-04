@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
-    tools:context=".com.upadhyay.hemant.NoteEx.activities.CreateNotes.CreateNoteFragment">
+    tools:context="com.upadhyay.hemant.noteEx.activities.createNotes.CreateNoteFragment">
 
     <ImageView
         android:id="@+id/imgBack"

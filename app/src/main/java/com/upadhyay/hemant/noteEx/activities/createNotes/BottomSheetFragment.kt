@@ -11,11 +11,11 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.upadhyay.hemant.noteEx.R
 import com.upadhyay.hemant.noteEx.Util.EMPTY_STRING
 import com.upadhyay.hemant.noteEx.Util.makeGone
 import com.upadhyay.hemant.noteEx.Util.makeVisible
-import com.upadhyay.hemant.R
-import com.upadhyay.hemant.databinding.FragmentBottomSheetBinding
+import com.upadhyay.hemant.noteEx.databinding.FragmentBottomSheetBinding
 
 class BottomSheetFragment : BottomSheetDialogFragment() {
 
