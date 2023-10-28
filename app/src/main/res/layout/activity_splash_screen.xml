@@ -20,7 +20,7 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_done" />
+            android:src="@drawable/ic_launcher_foreground" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -31,7 +31,7 @@
             android:textColor="@color/colorBlack"
             android:textSize="30sp"
             android:textStyle="bold"
-            android:layout_marginTop="-60px"/>
+            android:layout_marginTop="-10px"/>
 
     </LinearLayout>
 
